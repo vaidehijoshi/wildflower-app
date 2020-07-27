@@ -1,0 +1,6 @@
+
+<% @favorite_species.each do |species| %>
+  <% cache species do %>
+    <div><%= link_to species[:name], flower_path(species[:id]) %></div>
+  <% end %>
+<% end %>
